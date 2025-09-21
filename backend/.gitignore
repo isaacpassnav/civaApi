@@ -3,6 +3,8 @@ target/
 backend/.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
+# Archivos de configuracion local
+/backend/src/main/resources/application-local.properties
 
 ### STS ###
 .apt_generated

@@ -1,0 +1,17 @@
+DROP TABLE IF EXISTS bus CASCADE;
+DROP TABLE IF EXISTS brand CASCADE;
+
+CREATE TABLE brand (
+    id BIGSERIAL PRIMARY KEY,
+    name VARCHAR(255) NOT NULL UNIQUE
+);
+
+CREATE TABLE bus (
+    id BIGSERIAL PRIMARY KEY,
+    number VARCHAR(255) NOT NULL,
+    plate VARCHAR(255) NOT NULL,
+    features VARCHAR(255),
+    active BOOLEAN NOT NULL,
+    created_at TIMESTAMP,
+    brand_id BIGINT REFERENCES brand(id)
+);

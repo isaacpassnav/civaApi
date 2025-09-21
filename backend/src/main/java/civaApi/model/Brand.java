@@ -1,5 +1,4 @@
-
-package model;
+package civaApi.model;
 
 import jakarta.persistence.*;
 import lombok.Getter;

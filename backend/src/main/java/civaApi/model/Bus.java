@@ -1,4 +1,4 @@
-package model;
+package civaApi.model;
 
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -8,7 +8,6 @@ import java.time.LocalDateTime;
 @Entity
 @Getter
 @Setter
-
 public class Bus {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

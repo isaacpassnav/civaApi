@@ -1,0 +1,23 @@
+# Directorios de compilación y archivos temporales
+target/
+**/target/
+
+# Directorios de IDEs
+.idea/
+.vscode/
+.classpath
+.project
+.settings/
+.apt_generated/
+
+# Directorios de gestión de dependencias
+.mvn/
+/backend/.mvn/wrapper/maven-wrapper.jar
+/frontend/node_modules/
+
+# Archivos de logs y datos sensibles
+logs/
+*.log
+*.sqlite
+.env
+.DS_Store
