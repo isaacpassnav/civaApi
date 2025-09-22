@@ -24,7 +24,7 @@ const BusDetail = () => {
     return (
       <div className="container my-4">
         <div className="alert alert-danger text-center">Bus no encontrado</div>
-        <Link to="/" className="btn btn-primary mt-3">
+        <Link to="/bus" className="btn btn-primary mt-3">
           ← Volver a lista
         </Link>
       </div>
@@ -34,7 +34,7 @@ const BusDetail = () => {
     <div className="container my-4">
       <h2 className="mb-4">Detalles del Bus</h2>
       <BusCard bus={bus} />
-      <Link to="/" className="btn btn-secondary mt-3">
+      <Link to="/bus" className="btn btn-secondary mt-3">
         ← Volver a list
       </Link>
     </div>

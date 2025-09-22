@@ -14,9 +14,10 @@ function Login() {
       setError("Por favor ingresa usuario y contraseña");
       return;
     }
+
     const token = "Basic " + btoa(`${username}:${password}`);
     localStorage.setItem("authToken", token);
-    navigate("/");
+    window.location.href = "/bus";
   };
 
   return (
